@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover-siblings-fadeTo</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        background: linear-gradient(45deg, #0AAFF1, #EDF259);
+    }
+
+    .item-group {
+        display: flex;
+        justify-content: content;
+        flex-wrap: wrap;
+        width: 583px;
+        margin: 100px auto;
+
+        padding: 10px 0 0 10px;
+        background: linear-gradient(45deg, #1f1641, #012172, #0486db, #05acd3, #bbbf95);
+        border: 1px solid purple;
+    }
+
+    .item {
+        width: 180px;
+        height: 220px;
+        margin: 0 10px 10px 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+
+    <div class="wrap">
+        <div class="item-group">
+            <div class="item">
+                <a href="#"><img src="./images/96c195_8e7218ee3f42492686d414b6a1f64cd1_mv2.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="./images/96c195_c18395a1d0d941609757935f7810219a_mv2.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="./images/96c195_b879a5404d514a338816be88d41bed60_mv2.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="./images/96c195_9e958776f6614beaa3f5e0275bf1199b_mv2.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="./images/96c195_f30138f8c1b041cd97df98651ab54f2a_mv2.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="./images/96c195_25654ee35e404056b1046c256cff2f5e_mv2.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="./images/96c195_e8e4dd7cfcf74f9a93f0d01e202eefd6_mv2.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="./images/96c195_c5a7e4eccb074fe3b5541791dd093a9d_mv2.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="./images/96c195_defdf5e0dd0842aa8018e7510af30242_mv2.jpg" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.item').hover(function () {
+                $(this).siblings().stop().fadeTo(200, 0.3)
+            }, function () {
+                $(this).siblings().stop().fadeTo(200, 1)
+            })
+
+
+
+
+
+        })
+
+
+    </script>
+</body>
+
+</html>
