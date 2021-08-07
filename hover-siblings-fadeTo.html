@@ -14,8 +14,7 @@
         box-sizing: border-box;
     }
 
-    html,
-    body {
+    html{
         width: 100%;
         height: 100%;
     }
@@ -50,51 +49,48 @@
 
 <body>
 
-    <div class="wrap">
-        <div class="item-group">
-            <div class="item">
-                <a href="#"><img src="./images/96c195_8e7218ee3f42492686d414b6a1f64cd1_mv2.jpg" alt=""></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="./images/96c195_c18395a1d0d941609757935f7810219a_mv2.jpg" alt=""></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="./images/96c195_b879a5404d514a338816be88d41bed60_mv2.jpg" alt=""></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="./images/96c195_9e958776f6614beaa3f5e0275bf1199b_mv2.jpg" alt=""></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="./images/96c195_f30138f8c1b041cd97df98651ab54f2a_mv2.jpg" alt=""></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="./images/96c195_25654ee35e404056b1046c256cff2f5e_mv2.jpg" alt=""></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="./images/96c195_e8e4dd7cfcf74f9a93f0d01e202eefd6_mv2.jpg" alt=""></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="./images/96c195_c5a7e4eccb074fe3b5541791dd093a9d_mv2.jpg" alt=""></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="./images/96c195_defdf5e0dd0842aa8018e7510af30242_mv2.jpg" alt=""></a>
-            </div>
-        </div>
 
+    <div class="item-group">
+        <div class="item">
+            <a href="#"><img src="./images/96c195_8e7218ee3f42492686d414b6a1f64cd1_mv2.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./images/96c195_c18395a1d0d941609757935f7810219a_mv2.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./images/96c195_b879a5404d514a338816be88d41bed60_mv2.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./images/96c195_9e958776f6614beaa3f5e0275bf1199b_mv2.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./images/96c195_f30138f8c1b041cd97df98651ab54f2a_mv2.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./images/96c195_25654ee35e404056b1046c256cff2f5e_mv2.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./images/96c195_e8e4dd7cfcf74f9a93f0d01e202eefd6_mv2.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./images/96c195_c5a7e4eccb074fe3b5541791dd093a9d_mv2.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./images/96c195_defdf5e0dd0842aa8018e7510af30242_mv2.jpg" alt=""></a>
+        </div>
     </div>
+
+
 
     <script src="./jquery-3.6.0/jquery-3.6.0.js"></script>
     <script>
         $(function () {
+            // 觸碰時其他圖片的顏色變淡，移開後恢復正常
             $('.item').hover(function () {
                 $(this).siblings().stop().fadeTo(200, 0.3)
             }, function () {
                 $(this).siblings().stop().fadeTo(200, 1)
             })
-
-
-
-
 
         })
 
